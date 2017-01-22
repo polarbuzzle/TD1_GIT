@@ -5,7 +5,7 @@
 *********************************************/
 #include "Infirmier.h"
 #include <string>
-
+//gros vagin qui pue. 
 /*********************************************
 *Fonctions:		Constructeur par default
 *Descriptions:	Construit l'objet Infirmier aves ses valeurs par defauts
