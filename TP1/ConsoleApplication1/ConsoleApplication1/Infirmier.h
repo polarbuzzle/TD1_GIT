@@ -19,7 +19,6 @@ public :
 	Infirmier(string nom, string prenom, int nombreChambre);
 	~Infirmier(); 
 	//ws
-	//aa
 	
 	//Acesseurs
 	string getNom() const;
