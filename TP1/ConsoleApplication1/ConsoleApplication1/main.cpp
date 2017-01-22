@@ -1,8 +1,11 @@
-/**************************************************
- * Titre: Travail pratique #1 - Main.cpp
- * Date: 10 janvier 2017
- * Auteur:
-**************************************************/
+/********************************************
+* Titre: Travail pratique #1 - main.cpp
+* Date: 10 janvier 2017
+* Auteur:	Jean-Frederic Fontaine  1856632
+*			Samuel Ferron			1843659
+* Description:  Manipulation des classes Medecins, Infirmier,
+*				Specialite et Personnel. 
+*******************************************/
 
 #include "Specialite.h"
 #include "Medecin.h"
@@ -77,7 +80,7 @@ int main()
 	//12- Expliquez la relation entre les deux objets Medecin et Specialite. Justifiez votre r�ponse
 
 	/*
-	
+	Medcin et specialite sont lié ensemble par une agrégation 
 	*/
 
 	//13- Ajoutez les 6 objets du type Medecin � tableauMedecins de l'objet Personnel d�j� cr��

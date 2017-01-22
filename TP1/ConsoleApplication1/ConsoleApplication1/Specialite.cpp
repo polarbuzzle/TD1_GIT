@@ -1,8 +1,10 @@
-/**********************************************
-* Titre: Travail pratique #1 - Personnel.h
+/********************************************
+* Titre: Travail pratique #1 - Specialite.cpp
 * Date: 10 janvier 2017
-* Auteur: FERRON Samuel, FONTAINE Jean-Frederic
-*********************************************/
+* Auteur:	Jean-Frederic Fontaine  1856632
+*			Samuel Ferron			1843659
+* Description: Implémentation de la classe Medcin
+*******************************************/
 
 #include "Specialite.h"
 

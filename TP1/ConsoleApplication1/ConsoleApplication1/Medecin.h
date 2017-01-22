@@ -18,7 +18,7 @@ public:
 	// Constructeurs par defaut et par parametre
 	Medecin();
 	Medecin(string nom, int horaires, Specialite* uneSpecialite);
-
+	
 	//Destructeur
 	~Medecin();
 
