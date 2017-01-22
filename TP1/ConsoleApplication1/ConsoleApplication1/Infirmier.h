@@ -9,7 +9,7 @@
 
 #include <string>
 #include <iostream>
-
+//ok
 using namespace std;
 
 class Infirmier {
