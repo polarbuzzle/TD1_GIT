@@ -9,7 +9,7 @@
 
 #include <string>
 #include <iostream>
-//
+
 using namespace std;
 
 class Infirmier {
@@ -18,8 +18,7 @@ public :
 	Infirmier();
 	Infirmier(string nom, string prenom, int nombreChambre);
 	~Infirmier(); 
-	//ws
-	
+
 	//Acesseurs
 	string getNom() const;
 	string getPrenom() const; 

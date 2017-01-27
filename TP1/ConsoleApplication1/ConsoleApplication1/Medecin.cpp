@@ -1,18 +1,17 @@
 /********************************************
  * Titre: Travail pratique #1 - Medecin.cpp
  * Date: 10 janvier 2017
- * Auteur:	Jean-Frederic Fontaine  1856632
- *			Samuel Ferron			1843659	
- * Description: Implémentation de la classe Medcin 
+ * Auteur:
  *******************************************/
 
 #include"Medecin.h"
-/*********************************************
+
+ /*********************************************
  *Fonctions:		Constructeur par default
  *Descriptions:		Construit l'objet Medecin aves ses valeurs par defauts
  *Parametre:		Aucun
  *Retour:			Aucun
-*********************************************/
+ *********************************************/
 Medecin::Medecin() {
 	nom_ = "Inconnu";
 	horaires_ = 0;
@@ -20,10 +19,9 @@ Medecin::Medecin() {
 }
 
 /*********************************************
-*Fonctions:		Constructeur par paramètres 
+*Fonctions:		Constructeur par default
 *Descriptions:	Construit l'objet Specialite aves ses parametres
-*Parametre: - string nom : nom du nom_ (IN)
-*			- int horaire : valeur 
+*Parametre:		Aucun
 *Retour:		Aucun
 *********************************************/
 Medecin::Medecin(string nom, int horaires, Specialite* specialite) : specialite_(specialite) {

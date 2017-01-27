@@ -69,19 +69,28 @@ void Personnel::ajouterInfirmier(Infirmier& unInfirmier)
 
 void Personnel::afficherMedecins()
 {
-	cout << fixed << "=====================================Tableau Medecins=====================================" << endl
-		<< "==========================================================================================" << endl
-		<< "| Nom" << setw(25) << "| Horaires" << setw(30) << "| Domaine specialite" << setw(25) << "| Niveau specialite" << setw(5) << "|" << endl;
+	cout << fixed << "===================================Tableau Medecins======================================" << endl
+		<< "=========================================================================================" << endl
+		<< "| " << left << setw(20) << "Nom" << "| " << setw(20) << "Horaires" << "| " << setw(20) << "Domaine specialite" << "| " << setw(20)
+		<< "Niveau specialite" << "|" << endl;
 
 	for (unsigned i = 0; i < compteurMedecin_; i++) {
-		cout << "| " << tableauMedecins_[i].obtenirNom() << setw(25) << "| " << tableauMedecins_[i].obtenirHoraires() << setw(30) << "| "
-			<< tableauMedecins_[i].obtenirSpecialite().getDomaine() << setw(25) << "| " << tableauMedecins_[i].obtenirSpecialite().getNiveau()
-			<< setw(5) << "|" << endl;
+		cout << "| " << left << setw(20) << tableauMedecins_[i].obtenirNom() << right << "| " << left << setw(20) << tableauMedecins_[i].obtenirHoraires() << right << "| "
+			<< left << setw(20) << tableauMedecins_[i].obtenirSpecialite().getDomaine() << right << "| " << left << setw(20) << tableauMedecins_[i].obtenirSpecialite().getNiveau()
+			<< "|" << endl;
 	}
 
 }
 
 void Personnel::afficherInfirmiers()
 {
-// A completer
+	cout << fixed << "===================================Tableau Infirmiers====================================" << endl
+		<< "=========================================================================================" << endl
+		<< "| " << left << setw(27) << "Nom" << "| " << setw(27) << "Prenom" << "| " << setw(28) << "Nombre chambres" << "|" << endl;
+
+	for (unsigned i = 0; i < compteurInfirmier_; i++) {
+		cout << "| " << left << setw(27) << tableauInfirmiers_[i].getNom() << "| " << setw(27) << tableauInfirmiers_[i].getPrenom()
+			<< "| " << setw(28) << tableauInfirmiers_[i].getNombreChambre() << "|" << endl;
+	}
+	cout << "=========================================================================================" << endl;
 }

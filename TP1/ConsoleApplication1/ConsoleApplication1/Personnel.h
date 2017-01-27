@@ -6,7 +6,7 @@
 
 #ifndef PERSONNEL_H
 #define PERSONNEL_H
-//okokoksss
+
 #include <string>
 
 #include "Medecin.h"
