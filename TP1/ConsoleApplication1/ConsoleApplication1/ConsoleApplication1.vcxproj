@@ -149,7 +149,6 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Medecin.cpp" />
     <ClCompile Include="Personnel.cpp" />
-    <ClCompile Include="Source.cpp" />
     <ClCompile Include="Infirmier.cpp" />
     <ClCompile Include="Specialite.cpp" />
   </ItemGroup>

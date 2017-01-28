@@ -1,7 +1,8 @@
 /**********************************************
-* Titre: Travail pratique #1 - Personnel.h
+* Titre: Travail pratique #1 - Specialite.h
 * Date: 10 janvier 2017
 * Auteur: FERRON Samuel, FONTAINE Jean-Frederic
+*Description: Définition de la classe Specialite
 *********************************************/
 
 #ifndef SPECIALITE_H

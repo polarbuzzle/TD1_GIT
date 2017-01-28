@@ -1,20 +1,27 @@
+/*
 /**********************************************
- * Titre: Travail pratique #1 - Personnel.cpp
- * Date: 10 janvier 2017
- * Auteur:
- *********************************************/
-
-
-
+* Titre: Travail pratique #1 - Personnel.cpp
+* Date: 10 janvier 2017
+* Auteur : FERRON Samuel, FONTAINE Jean - Frederic
+*Description : Implémentation de la classe Personnel 
+***********************************************
+*/
 #include "Medecin.h"
 #include "Infirmier.h"
 #include "Personnel.h"
 #include <iostream>
 #include <iomanip>
 
-const int CAPACITE_INIT = 10;
+const int CAPACITE_INIT = 3;
 const int DOUBLE = 2;
-
+/*********************************************
+*Fonctions:		Personnel::Personnel()
+*Descriptions:	Construit l'objet Personnel qui consiste en 2 pointeurs.
+*				Le premier pointe vers un tableau de medecin et le second 
+*				vers un tableau d'infirmier 
+*Parametre:		Aucun
+*Retour:		Aucun
+*********************************************/
 Personnel::Personnel()
 {
 
@@ -26,13 +33,24 @@ Personnel::Personnel()
 	capaciteTableauInfirmiers_ = CAPACITE_INIT;
 
 }
-
+/*********************************************
+*Fonctions:		Personnel::~Personnel()
+*Descriptions:	Destructeurs de l'objet personnel 
+*Parametre:		Aucun
+*Retour:		Aucun
+*********************************************/
 Personnel::~Personnel()
 {
 	delete[] tableauMedecins_;
 	delete[] tableauInfirmiers_;
 }
-
+/*********************************************
+*Fonctions:		Personnel::ajouterMedecin
+*Descriptions:	Fonction qui permet d'ajouter un medecin dans 
+*				le tableau de medecin.
+*Parametre:		-(Medecin&)unMedecin : l'objet medecin qu'on veut ajouter au tableau 
+*Retour:		Aucun
+*********************************************/
 void Personnel::ajouterMedecin(Medecin& unMedecin)
 {
 	//verif capacite
@@ -49,7 +67,13 @@ void Personnel::ajouterMedecin(Medecin& unMedecin)
 
 	tableauMedecins_[compteurMedecin_++] = unMedecin;
 }
-
+/*********************************************
+*Fonctions:		Personnel::ajouterInfirmier 
+*Descriptions:	Fonction qui permet d'ajouter un infirmier dans
+*				le tableau d'infirmier.
+*Parametre:		-(Infirmier&)unMedecin : l'objet infirmier qu'on veut ajouter au tableau
+*Retour:		Aucun
+*********************************************/
 void Personnel::ajouterInfirmier(Infirmier& unInfirmier)
 {
 	//verif capacite
@@ -63,10 +87,15 @@ void Personnel::ajouterInfirmier(Infirmier& unInfirmier)
 		tableauInfirmiers_ = temp;
 		capaciteTableauInfirmiers_ *= 2;
 	}
-
 	tableauInfirmiers_[compteurInfirmier_++] = unInfirmier;
 }
-
+/*********************************************
+*Fonctions:		Personnel::afficherMedecins
+*Descriptions:	Fonction qui permet d'afficher un tableau explicitant 
+				tout les détails associé à chaque medecin 
+*Parametre:		Aucun
+*Retour:		Affichage d'un tableau 
+*********************************************/
 void Personnel::afficherMedecins()
 {
 	cout << fixed << "===================================Tableau Medecins======================================" << endl
@@ -81,7 +110,13 @@ void Personnel::afficherMedecins()
 	}
 
 }
-
+/*********************************************
+*Fonctions:		Personnel::afficherInfirmiers()
+*Descriptions:	Fonction qui permet d'afficher un tableau explicitant
+*				tout les détails associé à chaque infirmier 
+*Parametre:		Aucun
+*Retour:		Affichage d'un tableau
+*********************************************/
 void Personnel::afficherInfirmiers()
 {
 	cout << fixed << "===================================Tableau Infirmiers====================================" << endl

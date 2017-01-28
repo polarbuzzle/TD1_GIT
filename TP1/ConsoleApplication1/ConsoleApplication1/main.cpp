@@ -1,14 +1,19 @@
-/**************************************************
- * Titre: Travail pratique #1 - Main.cpp
- * Date: 10 janvier 2017
- * Auteur:
-**************************************************/
+/**********************************************
+* Titre: Travail pratique #1 - Personnel.cpp
+* Date: 10 janvier 2017
+* Auteur :	FERRON Samuel				1843659			
+			FONTAINE Jean - Frederic	1856632
+*Description :	Ceci est le fichier Main du TP1 du 
+*				cours INF1010. Il affiche un tableau
+*				explicitant les détails concernant 
+*				chaque objet medecin et infirmier qui 
+*				ont été créé à titre d'exmemple. 
+************************************************/
 
 #include "Specialite.h"
 #include "Medecin.h"
 #include "Infirmier.h"
 #include "Personnel.h"
-
 #include <string>
 #include <iostream>
 
@@ -75,11 +80,13 @@ int main()
 	Medecin med3("Louise", 45, &Chirurgien);
 	Medecin med4("Louise", 45, &Chirurgien);
 	//12- Expliquez la relation entre les deux objets Medecin et Specialite. Justifiez votre r�ponse
-
 	/*
-	
+	Nous avons concu l'objet medecin afin qu'il puisse recevoir une adresse qui pointe vers sa specilité. Par contre, 
+	les spécialité sont déclaré dans le main directement comme des objets spécialités; nous n'initialisons pas de pointeurs
+	qui pointe vers un objets specialité (pas d'intermédiaire). Ainsi, lorsque nous déclarons un objet medecin nous lui "passons"
+	sa spcécialité par référence en utilisant le symbole "&". Enfin, nous pouvons dire que la relation entre ces deux objets en 
+	est une d'agrégation par référence. 
 	*/
-
 	//13- Ajoutez les 6 objets du type Medecin � tableauMedecins de l'objet Personnel d�j� cr��
 	personnel.ajouterMedecin(steve);
 	personnel.ajouterMedecin(med0);
@@ -87,12 +94,9 @@ int main()
 	personnel.ajouterMedecin(med2);
 	personnel.ajouterMedecin(med3);
 	personnel.ajouterMedecin(med4);
-
 	//14- Affichez la liste des medecins
 	personnel.afficherMedecins();
-	personnel.afficherInfirmiers();
 	//15- Affichez la liste des infirmiers
-
-
+	personnel.afficherInfirmiers();
 	return 0;
 }

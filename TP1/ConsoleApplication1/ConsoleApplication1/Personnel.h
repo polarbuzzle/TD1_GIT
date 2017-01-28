@@ -1,8 +1,9 @@
 /**********************************************
- * Titre: Travail pratique #1 - Personnel.h
- * Date: 10 janvier 2017
- * Auteur:
- *********************************************/
+* Titre: Travail pratique #1 - Personnel.h
+* Date: 10 janvier 2017
+* Auteur: FERRON Samuel, FONTAINE Jean-Frederic
+*Description: Définition de la classe Personnel
+*********************************************/
 
 #ifndef PERSONNEL_H
 #define PERSONNEL_H
