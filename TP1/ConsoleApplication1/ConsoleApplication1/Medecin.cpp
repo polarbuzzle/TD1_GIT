@@ -5,7 +5,7 @@
  *******************************************/
 
 #include"Medecin.h"
-
+//p
  /*********************************************
  *Fonctions:		Constructeur par default
  *Descriptions:		Construit l'objet Medecin aves ses valeurs par defauts
