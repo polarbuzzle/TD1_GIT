@@ -74,21 +74,22 @@ void Personnel::ajouterMedecin(Medecin& unMedecin)
 *Parametre:		-(Infirmier&)unMedecin : l'objet infirmier qu'on veut ajouter au tableau
 *Retour:		Aucun
 *********************************************/
-void Personnel::ajouterInfirmier(Infirmier& unInfirmier)
-{
-	//verif capacite
-	if (compteurInfirmier_ == capaciteTableauInfirmiers_) {
-		Infirmier* temp = new Infirmier[capaciteTableauInfirmiers_* DOUBLE];
+void Personnel::ajouterInfirmier(Infirmier& unInfirmier) 
+	{
+		//verif capacite
+		if (compteurInfirmier_ == capaciteTableauInfirmiers_) {
+			Infirmier* temp = new Infirmier[capaciteTableauInfirmiers_* DOUBLE];
 
-		for (unsigned i = 0; i < capaciteTableauInfirmiers_; i++) {
-			temp[i] = tableauInfirmiers_[i];
+			for (unsigned i = 0; i < capaciteTableauInfirmiers_; i++) {
+				temp[i] = tableauInfirmiers_[i];
+			}
+			delete[] tableauInfirmiers_;
+			tableauInfirmiers_ = temp;
+			capaciteTableauInfirmiers_ *= 2;
 		}
-		delete[] tableauInfirmiers_;
-		tableauInfirmiers_ = temp;
-		capaciteTableauInfirmiers_ *= 2;
+		tableauInfirmiers_[compteurInfirmier_++] = unInfirmier;
 	}
-	tableauInfirmiers_[compteurInfirmier_++] = unInfirmier;
-}
+
 /*********************************************
 *Fonctions:		Personnel::afficherMedecins
 *Descriptions:	Fonction qui permet d'afficher un tableau explicitant 
@@ -108,7 +109,6 @@ void Personnel::afficherMedecins()
 			<< left << setw(20) << tableauMedecins_[i].obtenirSpecialite().getDomaine() << right << "| " << left << setw(20) << tableauMedecins_[i].obtenirSpecialite().getNiveau()
 			<< "|" << endl;
 	}
-
 }
 /*********************************************
 *Fonctions:		Personnel::afficherInfirmiers()
