@@ -8,8 +8,9 @@
 *.sln.docstates
 *.VC.opendb
 *.VC.db
-# User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
+# User-specific files (MonoDevelop/Xamarin Studio)
+
 
 # Build results
 [Dd]ebug/

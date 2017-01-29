@@ -2,7 +2,7 @@
 * Titre: Travail pratique #1 - Personnel.cpp
 * Date: 10 janvier 2017
 * Auteur :	FERRON Samuel				1843659			
-			FONTAINE Jean - Frederic	1856632
+*			FONTAINE Jean - Frederic	1856632
 *Description :	Ceci est le fichier Main du TP1 du 
 *				cours INF1010. Il affiche un tableau
 *				explicitant les détails concernant 
